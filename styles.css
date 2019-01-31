@@ -6,6 +6,8 @@
 
 }
 
+/** element based styles **/
+
 h1 {
     margin: 0;
 }
@@ -20,12 +22,29 @@ body {
     margin: 0;
 }
 
+section {
+    margin: 2em;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 3em;
+
+}
+
+
+/** Class based styles **/
+
 .logo {
-    background: #5d5d5a;
+    background: #3d3d3a;
     color: #ffa45c;
     font-size: 1.5em;
     text-align: center;
-    font-family: Sans-Serif;
+
+    /* Modern Georgia-based serif stack */
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif",
+    Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia,
+    serif;
 }
 
 .round {
