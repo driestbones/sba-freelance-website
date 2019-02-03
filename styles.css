@@ -6,8 +6,10 @@
 
 }
 
+/** element based styles **/
+
 h1 {
-    margin: 0.25em;
+    margin: 0;
 }
 
 body {
@@ -15,16 +17,44 @@ body {
     color: #5d5d5a;
     border-radius: 10%;
     font-size: 1.25em;
+
+    /* reset browser's default margin */
+    margin: 0;
 }
 
-.logo {
-    background: #5d5d5a;
-    color: #ffa45c;
-    font-size: 2em;
+section {
+    margin: 2em;
+}
+
+section h1 {
     text-align: center;
-    font-family: Sans-Serif;
+    font-size: 3em;
+
+}
+
+
+/** Class based styles **/
+
+.logo {
+    background: #3d3d3a;
+    color: #ffa45c;
+    font-size: 1.5em;
+    text-align: center;
+
+    /* Modern Georgia-based serif stack */
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif",
+    Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia,
+    serif;
 }
 
 .round {
     border-radius: 50%;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
