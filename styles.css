@@ -29,7 +29,10 @@ section {
 section h1 {
     text-align: center;
     font-size: 3em;
+}
 
+a {
+    color: #5c82ff;
 }
 
 
@@ -55,6 +58,29 @@ section h1 {
     display: flex;
     justify-content: space-evenly;
 
-    margin-top: .5em;
+    margin-top: 2em;
     margin-bottom: .5em;
+}
+
+/** Gallery **/
+
+.gallery {
+    text-align: center;
+}
+
+.gallery ul {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery li {
+    list-style-type: none;
+    margin: 0;
+    padding: .5em;
+    display: block;
+}
+
+.gallery img {
+    margin: 0;
+    padding: 0;
 }
