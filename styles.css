@@ -1,7 +1,7 @@
 /* Portrait */
-@media only screen 
-  and (min-width: 375px) 
-  and (max-width: 812px) 
+@media only screen
+  and (min-width: 375px)
+  and (max-width: 812px)
     {
 
 }
@@ -40,12 +40,12 @@ a {
     color: #5c82ff;
 }
 
-blockquote p::before {
-    content: "“";
+blockquote q::before {
+    content: open-quote;
 }
 
-blockquote p::after {
-    content: "”";
+blockquote q::after {
+    content: close-quote;
 }
 
 blockquote footer::before {
@@ -55,6 +55,10 @@ blockquote footer::before {
 blockquote footer {
     text-align: right;
     margin-right: 2em;
+}
+
+q {
+    display: block;
 }
 
 /** Class based styles **/
@@ -88,7 +92,7 @@ blockquote footer {
     text-align: center;
 }
 
-.testimonials p {
+.testimonials q {
     font-style: italic;
     font-size: 2em;
     text-indent: 2em;
@@ -100,11 +104,6 @@ blockquote footer {
     padding-left: 1em;
     text-align: left;
 }
-
-.testimonials span.author {
-    font-style: normal;
-}
-
 
 /** Gallery **/
 
