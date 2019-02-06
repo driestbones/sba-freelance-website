@@ -12,9 +12,13 @@ h1 {
     margin: 0;
 }
 
+header h1 {
+    color: #ffa45c;
+}
+
 body {
     background: #fff4e3;
-    color: #5d5d5a;
+    color: #4d4d4a;
     border-radius: 10%;
     font-size: 1.25em;
 
@@ -29,18 +33,34 @@ section {
 section h1 {
     text-align: center;
     font-size: 3em;
+    color: #3a3a30;
 }
 
 a {
     color: #5c82ff;
 }
 
+blockquote p::before {
+    content: "“";
+}
+
+blockquote p::after {
+    content: "”";
+}
+
+blockquote footer::before {
+    content: "— "
+}
+
+blockquote footer {
+    text-align: right;
+    margin-right: 2em;
+}
 
 /** Class based styles **/
 
 .logo {
     background: #3d3d3a;
-    color: #ffa45c;
     font-size: 1.5em;
     text-align: center;
 
@@ -61,6 +81,30 @@ a {
     margin-top: 2em;
     margin-bottom: .5em;
 }
+
+/** Testimonials **/
+
+.testimonials {
+    text-align: center;
+}
+
+.testimonials p {
+    font-style: italic;
+    font-size: 2em;
+    text-indent: 2em;
+    border-left-width: 1px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid;
+    padding-left: 1em;
+    text-align: left;
+}
+
+.testimonials span.author {
+    font-style: normal;
+}
+
 
 /** Gallery **/
 
