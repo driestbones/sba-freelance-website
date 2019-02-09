@@ -10,6 +10,9 @@
 
 h1 {
     margin: 0;
+    letter-spacing: 0.02em;
+    font-family: Georgia, serif;
+    font-weight: 300;
 }
 
 header h1 {
@@ -24,6 +27,7 @@ body {
 
     /* reset browser's default margin */
     margin: 0;
+    font-family: Helvetica neue;
 }
 
 section {
@@ -32,7 +36,9 @@ section {
 
 section h1 {
     text-align: center;
-    font-size: 3em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
     color: #3a3a30;
 }
 
@@ -61,6 +67,14 @@ q {
     display: block;
 }
 
+p {
+    line-height: 1.25em;
+}
+
+footer.contact {
+    min-height: 5em;
+}
+
 /** Class based styles **/
 
 .logo {
@@ -69,9 +83,6 @@ q {
     text-align: center;
 
     /* Modern Georgia-based serif stack */
-    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif",
-    Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia,
-    serif;
 }
 
 .round {
@@ -126,4 +137,20 @@ q {
 .gallery img {
     margin: 0;
     padding: 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: #ffcdab;
+}
+.contact h1 {
+    font-size: 1em;
+    color: #6d6d6a;
+}
+.contact p {
+    margin: 0;
 }
