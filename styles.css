@@ -15,10 +15,6 @@ h1 {
     font-weight: 300;
 }
 
-header h1 {
-    color: #ffa45c;
-}
-
 body {
     background: #fff4e3;
     color: #4d4d4a;
@@ -77,12 +73,27 @@ footer.contact {
 
 /** Class based styles **/
 
-.logo {
+header.logo {
+    /*
     background: #3d3d3a;
     font-size: 1.5em;
-    text-align: center;
+    text-align: right;
+    */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
 
-    /* Modern Georgia-based serif stack */
+    background-image: url("media/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.logo h1 {
+    width: 100%;
+    padding-left: 2em;
+    background: rgba(50, 50, 50, .3);
+    color: #1a1a10;
 }
 
 .round {
