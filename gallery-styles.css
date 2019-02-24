@@ -48,14 +48,11 @@ ul {
 .img-thumbnails {
     display: flex;
     overflow-x: auto;
+    /* justify-content: center; */
 }
 
-/* .img-thumbnails::-webkit-scrollbar {
-    display: none;
-} */
-
 .thumbnail {
-    max-height: 20vh;
+    max-height: 15vh;
     opacity: 0.8;
 }
 
