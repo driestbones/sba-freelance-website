@@ -1,0 +1,63 @@
+/* change default to flex */
+footer, nav, ol, section, ul {
+    display: flex;
+}
+
+body, footer, nav, ol, section, ul, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    width: 100%;
+}
+
+.f-row {
+    flex-flow: row wrap;
+}
+
+.f-column {
+    flex-flow: column wrap;
+}
+
+.f-fd-reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.right {
+    margin-left: auto;
+}
+
+/* navigation start */
+.navigation {
+    background-color: teal;
+}
+/* navigation end */
+
+/* splash start */
+.splash {
+    background-image: url("dunrobin.jpg");
+    background-size: cover;
+    background-position: center top;
+    height: 400px;
+}
+
+.tagline {
+    font-size: 4em;
+    background-color: rgba(255,255,255,0.5);
+    height: max-content;
+}
+/* splash end */
+
+.info-text {
+    max-width: 405px;
+}
+
+.item {
+    padding-top: 3em;
+}
+
+.info {
+    justify-content: space-evenly;
+}
