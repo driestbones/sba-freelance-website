@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/images/320.jpeg":
+/*!*****************************!*\
+  !*** ./src/images/320.jpeg ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"../images/320.jpeg\";\n\n//# sourceURL=webpack:///./src/images/320.jpeg?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -93,7 +104,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// necessary require for webpack to discover css\n__webpack_require__(/*! ./styles.scss */ \"./src/styles.scss\");\n\nvar burgers  = document.querySelectorAll(\".burger\");\nfor (var i=0; i<burgers.length; i++) {\n    var b = burgers.item(i);\n    var dataTarget = b.dataset[\"target\"];\n    var target = document.getElementById(dataTarget)\n\n    b.addEventListener(\"click\", function() {\n        b.classList.toggle(\"is-active\");\n        target.classList.toggle(\"is-active\");\n    });\n}\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("// necessary require for webpack to discover css\n__webpack_require__(/*! ./styles.scss */ \"./src/styles.scss\");\n__webpack_require__(/*! ./images/320.jpeg */ \"./src/images/320.jpeg\");\n\nvar burgers  = document.querySelectorAll(\".burger\");\nfor (var i=0; i<burgers.length; i++) {\n    var b = burgers.item(i);\n    var dataTarget = b.dataset[\"target\"];\n    var target = document.getElementById(dataTarget)\n\n    b.addEventListener(\"click\", function() {\n        b.classList.toggle(\"is-active\");\n        target.classList.toggle(\"is-active\");\n    });\n}\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
