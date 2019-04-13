@@ -18,7 +18,24 @@ module.exports = {
                         'sass-loader'
                     ]
                 })
-            }
+            },
+            {
+                test: /\.(jpe?g)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: '../images',
+                            loader: 'image-webpack-loader',
+                                mozjpeg: {
+                                    progressive: true,
+                                    quality: 65
+                                }
+                        }
+                    }
+                ]
+            },
         ]
     },
     plugins: [
