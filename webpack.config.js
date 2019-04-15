@@ -12,6 +12,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
+                    publicPath: '../',
                     fallback: 'style-loader',
                     use: [
                         'css-loader',
@@ -25,13 +26,16 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '[name].[ext]',
-                            outputPath: '../images',
-                            loader: 'image-webpack-loader',
-                                mozjpeg: {
-                                    progressive: true,
-                                    quality: 65
-                                }
+                            name: '[path][name].[ext]',
+                        },
+                    },
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            mozjpeg: {
+                                progressive: true,
+                                quality: 65
+                            }
                         }
                     }
                 ]
