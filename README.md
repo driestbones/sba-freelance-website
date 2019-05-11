@@ -1,4 +1,4 @@
-# Scott and Sophie's website
+# SBA Freelance's website
 
 ## Development
 
@@ -14,5 +14,5 @@
 
 ### Developing
 
-Run `npm run start` to have wepback watch files and rebuild the JavaScript and
+Run `npm run start` to have webpack watch files and rebuild the JavaScript and
 CSS when the files change.
