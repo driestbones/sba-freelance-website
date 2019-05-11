@@ -31,12 +31,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chuckha/sba-freelance-website.git"
+    "url": "git+https://github.com/driestbones/sba-freelance-website.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chuckha/sba-freelance-website/issues"
+    "url": "https://github.com/driestbones/sba-freelance-website/issues"
   },
-  "homepage": "https://github.com/chuckha/sba-freelance-website#readme"
+  "homepage": "https://github.com/driestbones/sba-freelance-website#readme"
 }
