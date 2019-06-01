@@ -5,6 +5,7 @@ require('../images/320.jpeg');
 require('../images/96.jpg');
 require('../images/steak-and-carrots.jpg');
 require('../images/shrimp-roll.jpg');
+require('../images/icons/ig.png');
 
 for (var i=1; i<=24; i++) {
     require('../images/foods/img-' + i + '.jpg');
@@ -12,7 +13,7 @@ for (var i=1; i<=24; i++) {
 }
 
 var burgers  = document.querySelectorAll(".burger");
-for (var i=0; i<burgers.length; i++) {
+for (i=0; i<burgers.length; i++) {
     var b = burgers.item(i);
     var dataTarget = b.dataset["target"];
     var target = document.getElementById(dataTarget)
@@ -28,7 +29,7 @@ var imageModalId = 'image-modal',
 
 // Clicking on a thumbnail will open a modal
 var thumbnails = document.getElementsByClassName('thumbnail');
-for (var i=0; i < thumbnails.length; i++) {
+for (i=0; i < thumbnails.length; i++) {
     thumbnails.item(i).parentElement.addEventListener('click', function(event) {
         event.preventDefault();
         var $link = this.querySelector('a');
@@ -40,7 +41,7 @@ for (var i=0; i < thumbnails.length; i++) {
 
 // Clicking on any modal-close will close the modal
 var closeButtons = document.getElementsByClassName('modal-close');
-for (var i=0; i < closeButtons.length; i++) {
+for (i=0; i < closeButtons.length; i++) {
     closeButtons.item(i).addEventListener('click', function() {
         this.parentElement.classList.toggle('is-active');
     });
@@ -58,7 +59,7 @@ document.addEventListener('keypress', function(evt) {
 
 // Clicking on a modal background will always close the modal
 var modalBackgrounds = document.getElementsByClassName('modal-background');
-for (var i=0; i<modalBackgrounds.length; i++) {
+for (i=0; i<modalBackgrounds.length; i++) {
     modalBackgrounds.item(i).addEventListener('click', function(ev) {
         this.parentElement.classList.remove('is-active');
     });
